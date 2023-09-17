@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <title>Map - Track the Buses of Somerset</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  </head>
+  <body>
+    <h1><a href="/" title="Home Page.">Track the Buses of Somerset</a></h1>
+    <p>Track the Buses of Somerset</p>
+      
+    <div id="map">
+    </div>
+    
+    <script>
+      var map = L.map('map').setView([51.02, -3.1], 13);
+
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+      L.marker([51.02, -3.1]).addTo(map)
+    </script>
+  </body>
+</html>
