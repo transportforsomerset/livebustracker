@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <title>Track the Buses of Somerset</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <p><a href="http://transportforsomerset.co.uk/" title="Transport for Somerset">Transport for Somerset</a></p>
+    <h1>Track the Buses of Somerset</h1>
+    <p>Track the Buses of Somerset (<a href="map.htm" title="View the map of Taunton.">map</a>)</p>
+    <p>The <a href="https://www.openstreetmap.org/way/1198445938" title="The Taunton Zone.">Taunton Zone</a> has a single fare cap of £1, with the rest of Somerset having a single fare cap of £2.</p>
+      
+    <table>
+      <caption>Bus routes</caption>
+      <thead>
+        <tr>
+          <th>Route Number</th>
+          <th>Route Info</th>
+          <th>Zones</th>
+          <th>Single Fare</th>
+          <th>Watch</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="5">Taunton Zone</td>
+        </tr>
+        <tr>
+          <td><a href="service-pr1.html" title="Taunton Park and Ride route.">PR1</a></td>
+          <td>Taunton Park and Ride</td>
+          <td>Taunton Zone</td>
+          <td>£1</td>
+          <td><button onclick="updatewatching('PR1');">PR1</button></td>
+        </tr>
+        <tr>
+          <td><a href="service-1.html" title="Route 1.">1</a></td>
+          <td>Taunton, Wellsprings, Pyrland, Lyngford, Train Station, North Town</td>
+          <td>Taunton Zone</td>
+          <td>£1</td>
+          <td><button onclick="updatewatching('1');">1</button></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.openstreetmap.org/relation/15475032" title="Route 1E.">1E</a></td>
+          <td>Taunton (Evening), Wellsprings, Pyrland, Lyngford, Train Station, North Town, Musgrove Park Hospital, Silk Mills</td>
+          <td>Taunton Zone</td>
+          <td>£1</td>
+          <td><button onclick="updatewatching('1E');">1E</button></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.openstreetmap.org/relation/1901099" title="Route 2.">2</a></td>
+          <td>Taunton, Priorswood, Nerrols, O'Bridge, Train Station, North Town</td>
+          <td>Taunton Zone</td>
+          <td>£1</td>
+          <td><button onclick="updatewatching('2');">2</button></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.openstreetmap.org/relation/1637008" title="Route 3.">3</a>*</td>
+          <td>Taunton<br>(Somerset Council)</td>
+          <td>Taunton Zone</td>
+          <td>£1</td>
+          <td><button onclick="updatewatching('3');">3</button></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.openstreetmap.org/relation/2260946" title="Route 4.">4</a></td>
+          <td>Taunton</td>
+          <td>Taunton Zone</td>
+          <td>£1</td>
+          <td><button onclick="updatewatching('4');">4</button></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.openstreetmap.org/relation/3827670" title="Route 6.">6</a></td>
+          <td>Taunton</td>
+          <td>Taunton Zone</td>
+          <td>£1</td>
+          <td><button onclick="updatewatching('6');">6</button></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.openstreetmap.org/relation/3830064" title="Route 7.">7</a></td>
+          <td>Taunton</td>
+          <td>Taunton Zone</td>
+          <td>£1</td>
+          <td><button onclick="updatewatching('7');">7</button></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.openstreetmap.org/relation/15616642" title="Route 12.">12</a>*</td>
+          <td>Taunton<br>(Somerset Council)</td>
+          <td>Taunton Zone</td>
+          <td>£1</td>
+          <td><button onclick="updatewatching('12');">12</button></td>
+        </tr>
+        <tr>
+          <td colspan="5">Bridgwater Zone</td>
+        </tr>
+        <tr>
+          <td>B1</td>
+          <td>Bridgwater</td>
+          <td>Bridgwater Zone</td>
+          <td>£2</td>
+          <td><button onclick="updatewatching('B1');">B1</button></td>
+        </tr>
+        <tr>
+          <td colspan="5">Yeovil Zone</td>
+        </tr>
+        <tr>
+          <td>51</td>
+          <td>Yeovil</td>
+          <td>Yeovil Zone</td>
+          <td>£2</td>
+          <td><button onclick="updatewatching('51');">51</button></td>
+        </tr>
+        <tr>
+          <td colspan="5">Somerset Zone</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>Taunton, Bridgwater, Highbridge</td>
+          <td>Taunton Zone / Somerset Zone</td>
+          <td>£1 / £2</td>
+          <td><button onclick="updatewatching('21');">21</button></td>
+        </tr>
+        <tr>
+          <td>21A</td>
+          <td>Taunton, Bridgwater, Highbridge</td>
+          <td>Taunton Zone / Somerset Zone</td>
+          <td>£1 / £2</td>
+          <td><button onclick="updatewatching('21A');">21A</button></td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>Taunton, Wellington</td>
+          <td>Taunton Zone / Somerset Zone</td>
+          <td>£1 / £2</td>
+          <td><button onclick="updatewatching('22');">22</button></td>
+        </tr>
+        <tr>
+          <td>22A</td>
+          <td>Taunton, Wellington</td>
+          <td>Taunton Zone / Somerset Zone</td>
+          <td>£1 / £2</td>
+          <td><button onclick="updatewatching('22A');">22A</button></td>
+        </tr>
+        <tr>
+          <td>X22</td>
+          <td>Taunton, Wellington</td>
+          <td>Taunton Zone / Somerset Zone</td>
+          <td>£1 / £2</td>
+          <td><button onclick="updatewatching('X22');">X22</button></td>
+        </tr>
+        <tr>
+          <td><a href="service-25.html" title="Service 25">25</a></td>
+          <td>Taunton, Norton, Wiveliscombe, Dulverton</td>
+          <td>Taunton Zone / Somerset Zone</td>
+          <td>£1 / £2</td>
+          <td><button onclick="updatewatching('25');">25</button></td>
+        </tr>
+        <tr>
+          <td>28</td>
+          <td>Taunton, Bishops Lydeard, Wiliton, Minehead</td>
+          <td>Taunton Zone / Somerset Zone</td>
+          <td>£1 / £2</td>
+          <td><button onclick="updatewatching('28');">28</button></td>
+        </tr>
+        <tr>
+          <td>28E</td>
+          <td>Evening, Taunton, Norton Fitzwarren, Cotford St. Luke, Minehead</td>
+          <td>Taunton Zone / Somerset Zone</td>
+          <td>£1 / £2</td>
+          <td><button onclick="updatewatching('28E');">28E</button></td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td>Taunton, Street, Glastonbury, Wells</td>
+          <td>Taunton Zone / Somerset Zone</td>
+          <td>£1 / £2</td>
+          <td><button onclick="updatewatching('29');">29</button></td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Taunton, Ilminster, Chard</td>
+          <td>Taunton Zone / Somerset Zone</td>
+          <td>£1 / £2</td>
+          <td><button onclick="updatewatching('30');">30</button></td>
+        </tr>
+        <tr>
+          <td>54</td>
+          <td>Taunton, Langport, Somerton, Yeovil</td>
+          <td>Taunton Zone / Yeovil Zone / Somerset Zone</td>
+          <td>£1 / £2</td>
+          <td><button onclick="updatewatching('54');">54</button></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <hr>
+    
+    <div id="whatisbeingwatched"><p>Not currently watching any routes.</p></div> 
+  </body>
+</html>
