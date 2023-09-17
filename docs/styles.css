@@ -1,0 +1,40 @@
+#map {
+  width: 95%;
+  height: 400px;
+}
+
+table {
+  border: 1px solid black;
+  font-variant-numeric: tabular-nums;
+  max-width: 95%;
+  overflow-x: auto;
+  width: 80%;
+}
+table tbody {
+  border: 1px dotted red;
+}
+table tr td {
+  border-left: 1px solid green; 
+  border-top: 1px dashed green;
+  padding: 2px 5px;
+  text-align: center;
+}
+table tr td:first-child {
+  border-left: none;
+}
+table tr td[colspan] {
+  background-color: #d7e4fa;
+}
+
+table#timetable {
+  border: 0;
+}
+table#timetable tbody {
+  border: 1px solid black;
+}
+table#timetable tr:hover {
+  background-color: #daf5f1;
+}
+table#timetable tr td:nth-child(odd) {
+  background-color: #d7f7e4;
+}
