@@ -10,6 +10,9 @@ table {
   overflow-x: auto;
   width: 80%;
 }
+table .houruntil {
+  background-color: #e9f7be;
+}
 table tbody {
   border: 1px dotted red;
 }
