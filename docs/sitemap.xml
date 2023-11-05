@@ -5,12 +5,12 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
-      <loc>https://busesofsomerset.transportforsomerset.co.uk/</loc>
+      <loc>https://livebustracker.transportforsomerset.co.uk/</loc>
       <priority>1.0</priority>
       <lastmod>2023-03-04</lastmod>
     </url>
     <url>
-      <loc>https://busesofsomerset.transportforsomerset.co.uk/map.html</loc>
+      <loc>https://livebustracker.transportforsomerset.co.uk/map.html</loc>
       <priority>1.0</priority>
       <lastmod>2023-03-04</lastmod>
     </url>
