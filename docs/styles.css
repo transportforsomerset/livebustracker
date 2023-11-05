@@ -11,7 +11,7 @@ table {
   width: 80%;
 }
 table .houruntil {
-  background-color: #e9f7be;
+  background-color: #e9f7be !important;
 }
 table tbody {
   border: 1px dotted red;
