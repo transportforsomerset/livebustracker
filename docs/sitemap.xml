@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-stylesheet href="sitemap.xsl" type="text/xsl"?>
+<!-- <?xml-stylesheet href="sitemap.xsl" type="text/xsl"?>-->
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
       <loc>https://livebustracker.transportforsomerset.co.uk/</loc>
       <priority>1.0</priority>
-      <lastmod>2023-03-04</lastmod>
+      <lastmod>2023-11-05</lastmod>
     </url>
     <url>
       <loc>https://livebustracker.transportforsomerset.co.uk/map.html</loc>
       <priority>1.0</priority>
-      <lastmod>2023-03-04</lastmod>
+      <lastmod>2023-11-05</lastmod>
     </url>
 </urlset>
