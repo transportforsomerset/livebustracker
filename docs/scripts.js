@@ -23,4 +23,4 @@ function whatamiwatching() {
   whatisbeingwatched.appendChild(para);
 }
 
-window.addEventListener("load", whatamiwatching());
+window.addEventListener("DOMContentLoaded", whatamiwatching());
