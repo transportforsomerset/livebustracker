@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [51.015384, -3.103090]
+        "coordinates": [51.02, -3.1]
       },
       "properties": {
         "operator": "FBOS",
