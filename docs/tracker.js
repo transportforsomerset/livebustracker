@@ -1,17 +1,17 @@
-async function trackingMap(ref) {
+async function trackingMap(counter) {
   let trackingFile = "https://livebustracker.transportforsomerset.co.uk/tracking-data.geojson";
   
   const trackingFileAllData = await fetch(trackingFile);
   const trackingData = await trackingFileAllData.json();
 
-  console.log("Ref: " + ref);
+  console.log("Counter: " + counter);
 }
 
 function startTracking() {
-  if (ref) {
-    ref++;
+  if (counter) {
+    counter++;
   } else {
-    let ref = 0;
+    let counter = 0;
   }
-  setInterval(trackingMap(ref), 60000); // 1 minute.
+  setInterval(trackingMap(counter), 60000); // 1 minute.
 }
