@@ -8,9 +8,10 @@ async function trackingMap(ref) {
 }
 
 function startTracking() {
-  if (ref)
+  if (ref) {
     ref++;
-  else
+  } else {
     let ref = 0;
+  }
   setInterval(trackingMap(ref), 60000); // 1 minute.
 }
