@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [51.015384, -3.103090]
+      },
+      "properties": {
+        "operator": "FBOS",
+        "route": "1"
+      }
+    }
+  ]
+}
