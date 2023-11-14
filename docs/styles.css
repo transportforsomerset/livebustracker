@@ -33,15 +33,19 @@ table tr td[colspan] {
   background-color: #d7e4fa;
 }
 
-table#timetable {
+table#timetable,
+table.timetable {
   border: 0;
 }
-table#timetable tbody {
+table#timetable tbody,
+table.timetable tbody {
   border: 1px solid black;
 }
-table#timetable tr:hover {
+table#timetable tr:hover,
+table.timetable tr:hover {
   background-color: #daf5f1;
 }
-table#timetable tr td:nth-child(odd) {
+table#timetable tr td:nth-child(odd),
+table.timetable tr td:nth-child(odd) {
   background-color: #d7f7e4;
 }
