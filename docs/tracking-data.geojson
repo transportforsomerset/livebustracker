@@ -4,12 +4,26 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "Point",
-        "coordinates": [-3.1,51.02]
+        "type": "MultiPoint",
+        "coordinates": [
+          [-3.1040,51.0174],
+          [-3.1016,51.0264]
+        ]
       },
       "properties": {
         "operator": "FBOS",
         "route": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.0848,51.0355]
+      },
+      "properties": {
+        "operator": "FBOS",
+        "route": "2"
       }
     }
   ]
