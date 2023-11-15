@@ -11,6 +11,7 @@
         ]
       },
       "properties": {
+        "marker-symbol": "bus",
         "operator": "FBOS",
         "route": "1"
       }
@@ -22,6 +23,7 @@
         "coordinates": [-3.0848,51.0355]
       },
       "properties": {
+        "marker-symbol": "bus",
         "operator": "FBOS",
         "route": "2"
       }
