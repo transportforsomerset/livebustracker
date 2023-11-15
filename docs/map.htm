@@ -22,9 +22,10 @@
         let trackingDataFile = "https://livebustracker.transportforsomerset.co.uk/tracking-data.geojson";
         const trackingData = await fetch(trackingDataFile);
         const trackingFeatures = await trackingData.json();
+        return trackingFeatures;
       }
       
-      L.geoJSON(trackingFeatures).addTo(map);
+      L.geoJSON(geojsonFeatures()).addTo(map);
       
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
