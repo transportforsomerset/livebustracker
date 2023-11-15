@@ -19,6 +19,7 @@
       var map = L.map('map', {minZoom: 11, maxZoom: 18, fullscreenControl: {pseudoFullscreen: false}}).setView([51.02, -3.1], 13);
 
       async function geojsonFeatures() {
+        console.log("Calling for the geojson file!");
         let trackingDataFile = "https://livebustracker.transportforsomerset.co.uk/tracking-data.geojson";
         const trackingData = await fetch(trackingDataFile);
         const trackingFeatures = await trackingData.json();
