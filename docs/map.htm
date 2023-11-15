@@ -20,9 +20,14 @@
 
       async function geojsonFeatures() {
         console.log("Calling for the geojson file!");
-        let trackingDataFile = "https://livebustracker.transportforsomerset.co.uk/tracking-data.geojson";
+        const trackingDataFile = "https://livebustracker.transportforsomerset.co.uk/tracking-data.geojson";
         const trackingData = await fetch(trackingDataFile);
         const trackingFeatures = await trackingData.json();
+
+        console.log(trackingDataFile);
+        console.log(trackingData);
+        console.log(trackingFeatures);
+        
         return trackingFeatures;
       }
       
