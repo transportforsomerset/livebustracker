@@ -18,6 +18,42 @@
     <script>
       var map = L.map('map', {minZoom: 11, maxZoom: 18, fullscreenControl: {pseudoFullscreen: false}}).setView([51.02, -3.1], 13);
 
+let geojsonFeature = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [-3.1040,51.0174],
+          [-3.1016,51.0264]
+        ]
+      },
+      "properties": {
+        "marker-symbol": "bus",
+        "operator": "FBOS",
+        "route": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.0848,51.0355]
+      },
+      "properties": {
+        "marker-symbol": "bus",
+        "operator": "FBOS",
+        "route": "2"
+      }
+    }
+  ]
+};
+
+      
+      L.geoJSON(geojsonFeature).addTo(map);
+      
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(map);
