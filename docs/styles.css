@@ -9,6 +9,8 @@ body {
 
 #whatisbeingwatched {
   position: fixed;
+  botton: 0;
+  left:   0;
 }
 
 table {
