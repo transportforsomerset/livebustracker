@@ -22,7 +22,6 @@ table {
   font-variant-numeric: tabular-nums;
   max-width: 95%;
   overflow-x: auto;
-  width: 80%;
 }
 table .houruntil {
   background-color: #e9f7be !important;
