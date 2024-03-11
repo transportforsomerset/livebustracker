@@ -14,7 +14,7 @@ function whatamiwatching() {
   para.appendChild(paratext1);
 
   var routestatus = ["routeontime", "routelightdelays", "routeheavydelays"];
-  var random  = Math.floor(Math.random() * 2);
+  var random  = Math.floor(Math.random() * 3);
   
   const para2 = document.createElement("span");
   const paratext2 = document.createTextNode(watchRoute);
