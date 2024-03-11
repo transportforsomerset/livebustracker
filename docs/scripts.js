@@ -10,12 +10,12 @@ function whatamiwatching() {
     localStorage.setItem("watchRoute", watchRoute);
   
   const para = document.createElement("p");
-  const paratext1 = document.createTextNode("Currently watching route: " + watchRoute);
+  const paratext1 = document.createTextNode("Currently watching route: ");
   para.appendChild(paratext1);
 
   const para2 = document.createElement("span");
   const paratext2 = document.createTextNode(watchRoute);
-  para2.setAttribute("class","routeStatus");
+  para2.setAttribute("class","routestatus");
   para2.appendChild(paratext2);
   para.appendChild(para2);
   
