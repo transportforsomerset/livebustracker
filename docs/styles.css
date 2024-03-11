@@ -16,6 +16,9 @@ body {
   padding-left: 0.5em;
   width: 100%;
 }
+#whatisbeingwatched .routestatus {
+  background-color: green;
+}
 
 table {
   border: 1px solid black;
