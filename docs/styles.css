@@ -41,6 +41,7 @@ table tr td:first-child {
 table tr td[colspan] {
   background-color: #d7e4fa;
   background-color: #006072;
+  color: white;
 }
 
 table#timetable,
