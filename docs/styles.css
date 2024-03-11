@@ -40,6 +40,7 @@ table tr td:first-child {
 }
 table tr td[colspan] {
   background-color: #d7e4fa;
+  backgrounf-color: #006072;
 }
 
 table#timetable,
