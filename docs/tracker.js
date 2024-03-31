@@ -5,6 +5,7 @@ async function trackingMap(counter) {
   const trackingData = await trackingFileAllData.json();
 
   console.log("Counter: " + counter);
+  return counter;
 }
 
 function startTracking(counter) {
