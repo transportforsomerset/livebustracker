@@ -1,4 +1,4 @@
-function trackingMap(counter) {
+asyn function trackingMap(counter) {
   console.log("1: trackingMap() called ...");
   
   let trackingFile = "https://livebustracker.transportforsomerset.co.uk/tracking-data.geojson";
@@ -9,9 +9,9 @@ function trackingMap(counter) {
   
   const trackingData = await trackingFileAllData.json();
   console.log("4: trackingFile recieved ...");
-
+  console.log(trackingData)
+  
   console.log("5: Counter: " + counter);
-  return counter;
 }
 
 function startTracking(counter) {
