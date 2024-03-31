@@ -15,7 +15,7 @@ async function trackingMap(counter) {
 }
 
 function startTracking(counter) {
-  if (typeof counter) {
+  if (counter) {
     counter++;
   } else {
     let counter = 0;
