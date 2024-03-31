@@ -1,4 +1,4 @@
-asyn function trackingMap(counter) {
+async function trackingMap(counter) {
   console.log("1: trackingMap() called ...");
   
   let trackingFile = "https://livebustracker.transportforsomerset.co.uk/tracking-data.geojson";
