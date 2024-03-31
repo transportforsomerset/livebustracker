@@ -13,5 +13,5 @@ function startTracking(counter) {
   } else {
     let counter = 0;
   }
-  setInterval(trackingMap(counter), 60000); // 1 minute.
+  setInterval(trackingMap(counter), 10000); // 10 seconds.
 }
