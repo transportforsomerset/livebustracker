@@ -54,6 +54,7 @@ table.timetable {
   border: 0;
 }
 table.left {
+  margin-right: 2em;
   float: left;
 }
 table#timetable tbody,
