@@ -51,6 +51,10 @@ table#timetable,
 table.timetable {
   border: 0;
 }
+table#timetable left,
+table.timetable left {
+  float: left;
+}
 table#timetable tbody,
 table.timetable tbody {
   border: 1px solid black;
