@@ -19,6 +19,8 @@ body {
 #whatisbeingwatched .routeontime      { color: green;  }
 #whatisbeingwatched .routelightdelays { color: yellow; }
 #whatisbeingwatched .routeheavydelays { color: red;    }
+#whatisbeingwatched .routesuspended   { color: red; font-weight: bold; }
+
 
 table {
   border: 1px solid black;
