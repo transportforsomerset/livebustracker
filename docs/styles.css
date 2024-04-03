@@ -53,8 +53,7 @@ table#timetable,
 table.timetable {
   border: 0;
 }
-table#timetable left,
-table.timetable left {
+table.left {
   float: left;
 }
 table#timetable tbody,
