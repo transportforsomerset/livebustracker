@@ -3,17 +3,22 @@
   <head>
     <title>Map - Track the bus services across Somerset</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.transportforsomeret.co.uk/styles.css">
     <link rel="stylesheet" href="styles.css">  <link rel="stylesheet" href="leaflet.css">
                                                <link rel="stylesheet" href="leaflet-fullscreen.css">
     <script src="scripts.js"></script>         <script src="leaflet.js"></script>
     <script src="tracker.js"></script>         <script src="leaflet-fullscreen.js"></script>
   </head>
   <body>
-    <h1><a href="/" title="Home Page.">Track the bus services across Somerset</a></h1>
-    <p>Track the bus services across Somerset on the live map below.</p>
-      
+    <header>
+      <h1><a href="/" title="Home Page.">Track the bus services across Somerset</a></h1>
+      <h2>Track the bus services across Somerset on the live map below.</h2>
+    </header>
+
+    <main>
     <div id="map">
     </div>
+    </main>
     
     <script>
       var map = L.map('map', {minZoom: 11, maxZoom: 18, fullscreenControl: {pseudoFullscreen: false}}).setView([51.02, -3.1], 13);
@@ -73,5 +78,9 @@
 
       startTracking(0);
     </script>
+    
+    <footer>
+      <p>&copy; Transport for Somerset 2024</p>
+    </footer>
   </body>
 </html>
