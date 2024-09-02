@@ -64,6 +64,7 @@ table.timetable tbody {
 table#timetable tr:hover,
 table.timetable tr:hover {
   background-color: #daf5f1;
+  border: 1px solid red;
 }
 table#timetable tr td:nth-child(odd),
 table.timetable tr td:nth-child(odd) {
