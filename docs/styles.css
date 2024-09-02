@@ -21,6 +21,8 @@ body {
 #whatisbeingwatched .routeheavydelays { color: red;    }
 #whatisbeingwatched .routesuspended   { color: red; font-weight: bold; }
 
+img.floatleft  { float: left;  }
+img.floatright { float: right; }
 
 table {
   border: 1px solid black;
