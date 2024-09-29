@@ -49,7 +49,7 @@ table tr td:first-child {
 table tr td[colspan] {
   background-color: #d7e4fa;
   background-color: #006072;
-  background-color: #e9f7be;
+  background-color: #e9f7be !important;
   color: white;
 }
 
